@@ -1,0 +1,29 @@
+import sys
+import time
+
+def p(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.025)
+    print("")
+p("I'm the first man in the door and the last man to leave.")
+print()
+print("----------------------------------------------------")
+print()
+strng = "That's what I call a close encounter."
+for char in strng:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(0.025)
+print("")
+print("---------------------------------------")
+print()
+w = "Every moment in life is a learning experience. Or what good is it, right"
+for ch in w:
+    sys.stderr.write(ch)
+    sys.stderr.flush()
+    time.sleep(0.025)
+print("")
+print("----------------------------------------------------------------------")
+print()
