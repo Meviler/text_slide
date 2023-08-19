@@ -1,0 +1,18 @@
+import sys
+import time
+
+def p(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.5)
+
+# Your string to print
+text_to_print = """I'm the first man in the door and the last man to leave.
+That's what I call a close encounter.
+Every moment in life is a learning experience. Or what good is it, right"""
+
+# Loop the printing process
+for _ in range(1):  # Change the number 1 to the desired number of loops
+    p(text_to_print)
+    print()  # Print an empty line between iterations
