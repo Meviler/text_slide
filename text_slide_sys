@@ -27,3 +27,31 @@ for ch in w:
 print("")
 print("----------------------------------------------------------------------")
 print()
+
+
+
+
+
+
+add loop
+import sys
+import time
+
+def p(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.025)
+
+# Your string to print
+text_to_print = "Hello, world!"
+
+# Loop the printing process
+for _ in range(3):  # Change the number 3 to the desired number of loops
+    p(text_to_print)
+    print()  # Print an empty line between iterations
+
+
+
+
+
